@@ -32,5 +32,29 @@ If you want to modify the code:
 *   **Hardware:** Adafruit KB2040 or compatible RP2040 board.
 *   **Software:** Arduino IDE (if compiling from source).
 
+## 🧱 Packet Payload Definition
+Packet Payload Definition: (byte count varies with data length)
+
+             < Byte0 > < Byte1 > <Byte2 > < Byte3 >< Byte4 >.....< Byte8 >
+
+< Byte0 > = Mode/Size Byte and it contains information on whether it is a Block Transfer and the Size(Bytes) of the Data. The High Nibble determines if it is Block and the Lower Nibble is the size of the Data Transfer. A High Nibble of  0xB indicates a block transfer.
+
+Example: 0xB2 means Block of length two bytes, 0x04 means non-block of length four bytes.
+
+< Byte1 > =  R/W Byte: Read = 0x72 and Write = 0x77
+
+< Byte2 > = dev-id = 7-bit Device Address for the peripheral
+
+< Byte3 > = ADDR = register address in Hex
+
+< Byte4:N Bytes > = DATA sent / received
+
+< Byte N+1 > ERROR Byte  0x00 = Success / 0xFF Failure
+
+## 🎚️ GUI Control 
+
+The UXB-300 is a browser based GUI builder that lets you wire up register-level controls with any target IC. The following link provides an example with a LPS22HB as the target.
+ PROVIDE EXAMPLE to Tutorial : <>
+
 ## 📜 License
 This project is open source. Feel free to use and modify it!
