@@ -53,8 +53,10 @@ Example: 0xB2 means Block of length two bytes, 0x04 means non-block of length fo
 
 ## 🎚️ GUI Control 
 
-The UXB-300 is a browser based GUI builder that lets you wire up register-level controls with any target IC. The following link provides an example with a LPS22HB as the target.
+The [UXB-300](https://labs16.com/) is a browser based GUI builder that lets you wire up register-level controls with any target IC. The following link provides an example with a LPS22HB as the target.
+
 [Example with LPS22HB](https://apps.labs16.com/poverholt/kb2040_i2c_lps22)
+
 [How to GUI Steps](https://adafruit-playground.com/u/fmartine/pages/kb2040-as-i2c-bridge-with-gui-control)
 
 
