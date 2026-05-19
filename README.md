@@ -59,6 +59,7 @@ The [UXB-300](https://labs16.com/) is a browser based GUI builder that lets you 
 
 [How to GUI Steps](https://adafruit-playground.com/u/fmartine/pages/kb2040-as-i2c-bridge-with-gui-control)
 
+![UXBIMAGE](img/uxb-300.png)
 
 ## 📜 License
 This project is open source. Feel free to use and modify it!
